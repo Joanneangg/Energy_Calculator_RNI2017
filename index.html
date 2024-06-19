@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Energy Calculator for Students (RNI 2017)</h1>
+        <form id="energy-form">
+            <label for="age">Tahun:</label>
+            <select id="age">
+                <option value="">Tahun</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+            </select>
+            
+            <label for="gender">Jantina:</label>
+            <select id="gender">
+                <option value="">Jantina</option>
+                <option value="male">Lelaki</option>
+                <option value="female">Perempuan</option>
+            </select>
+            
+            <label for="activity">Tahap Aktivit Fizikal:</label>
+            <select id="activity">
+                <option value="">Tahap Aktiviti Fizikal</option>
+                <option value="low">Kurang aktif</option>
+                <option value="moderate">Sederhana aktif</option>
+                <option value="high">Aktif</option>
+                <option value="veryhigh">Sangat aktif</option>
+            </select>
+            
+            <button type="button" onclick="calculateEnergy()">Calculate</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+
+    <!-- Linking to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
